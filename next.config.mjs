@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import path from 'path';
 
-export default nextConfig;
+// next.config.mjs
+export default {
+  sassOptions: {
+    // Example options
+    includePaths: ["/some/path"],
+   // prependData: `@import "variables.scss";`,
+  },
+};
